@@ -14,17 +14,29 @@
 
     document.getElementById("addition").addEventListener("click", function() {
         // perform an addition
+        let x = parseInt(document.getElementById("op-one").value);
+        let y = parseInt(document.getElementById("op-two").value);
+        alert( x + y )
     });
 
     document.getElementById("substraction").addEventListener("click", function() {
         // perform an substraction
+        let x = parseInt(document.getElementById("op-one").value);
+        let y = parseInt(document.getElementById("op-two").value);
+        alert( x - y )
     });
 
     document.getElementById("multiplication").addEventListener("click", function() {
         // perform an multiplication
+        let x = parseInt(document.getElementById("op-one").value);
+        let y = parseInt(document.getElementById("op-two").value);
+        alert( x * y )
     });
 
     document.getElementById("division").addEventListener("click", function() {
         // perform an division
+        let x = parseInt(document.getElementById("op-one").value);
+        let y = parseInt(document.getElementById("op-two").value);
+        alert( x / y )
     });
 })();
