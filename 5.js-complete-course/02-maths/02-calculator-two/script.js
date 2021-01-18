@@ -13,22 +13,21 @@
     // to get the value of an input: document.getElementById("element-id").value
     let x = parseInt(document.getElementById("op-one").value);
     let y = parseInt(document.getElementById("op-two").value);
-    let operation = document.getElementById("")
 
     var performOperation = function(operation) {
         // perform the operation
-        switch () {
+        switch (operation) {
             case document.getElementById("addition"):
-                alert(x+y)
+                alert(x+y);
                 break;
             case document.getElementById("subtraction"):
-                alert(x-y)
+                alert(x-y);
                 break;
             case document.getElementById("multiplication"):
-                alert(x*y)
+                alert(x*y);
                 break;
             case document.getElementById("division"):
-                alert(x/y)
+                alert(x/y);
                 break;
         }
     };

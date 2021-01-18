@@ -16,10 +16,11 @@ while (check === false){
         let age = prompt("how old are you?");
         let gender = prompt("are you a boy or a girl? ♫pokemon tune♪");
         let town = prompt("where do you live?");
-         check = confirm("are these correct? " + age + " " + gender + " " + town);
-    }
-    else{
+        check = confirm("are these correct? " + age + " " + gender + " " + town);
+        if (check === false){
+            alert('please confirm')
+        }else {
             alert("Confirmed!")
-            break;
+        }
     }
 }

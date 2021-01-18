@@ -14,9 +14,14 @@
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("run").addEventListener("click", function() {
-
         // your code here
+       let array = Array.from(document.getElementById("numbers").value.split(', '));
 
+       let lowestToHighest = array.sort((a, b) => a - b);
+       let answer = lowestToHighest.toString();
+
+       console.log(lowestToHighest);
+       console.log(answer);
+        document.getElementById("numbers").innerHTML = answer;
     });
-
 })();
