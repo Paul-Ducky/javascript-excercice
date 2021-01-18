@@ -9,6 +9,19 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+
+let hungry = prompt("would you like some cake?");
+
+if (hungry === 'yes'){
+    prompt("congratulations, me too!");
+}   else {
+    prompt("More cake for me then!");
+}
+
+
+
+
+
 (function() {
 
   // your code here

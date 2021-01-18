@@ -9,8 +9,17 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+var check = false;
+while (check === false){
 
-    // your code here
-
-})();
+    if (check === false){
+        let age = prompt("how old are you?");
+        let gender = prompt("are you a boy or a girl? ♫pokemon tune♪");
+        let town = prompt("where do you live?");
+         check = confirm("are these correct? " + age + " " + gender + " " + town);
+    }
+    else{
+            alert("Confirmed!")
+            break;
+    }
+}
