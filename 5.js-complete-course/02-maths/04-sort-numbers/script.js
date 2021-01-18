@@ -22,6 +22,6 @@
 
        console.log(lowestToHighest);
        console.log(answer);
-        document.getElementById("numbers").innerHTML = answer;
+       document.getElementById("numbers").value = answer;
     });
 })();

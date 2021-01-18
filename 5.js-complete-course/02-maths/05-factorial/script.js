@@ -17,6 +17,19 @@
 
         // your code here
 
+
+        let number = parseInt(document.getElementById("number").value)
+        function factorialize(number) {
+            if (number < 0)
+                return -1;
+            else if (number === 0)
+                return 1;
+            else {
+                return (number * factorialize(number - 1));
+            }
+        }
+        document.getElementById("number").value = factorialize(number);
+
     });
 
 })();
