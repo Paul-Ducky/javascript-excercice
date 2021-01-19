@@ -5,7 +5,6 @@
  * coded by leny@BeCode
  * started at 26/10/2018
  */
-
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
@@ -15,6 +14,7 @@
         // your code here
         let result = 0;
         let i = 1;
+
         while (result <=21){
             result = Math.pow(i, 2);
             if (result <21){
@@ -22,5 +22,12 @@
                 alert(result);
             }
         }
+
+
+
     });
 })();
+
+
+
+
