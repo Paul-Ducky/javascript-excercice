@@ -11,26 +11,30 @@
 
 (function() {
     // to get the value of an input: document.getElementById("element-id").value
-    let x = parseInt(document.getElementById("op-one").value);
-    let y = parseInt(document.getElementById("op-two").value);
 
     var performOperation = function(operation) {
+
+        let x = parseInt(document.getElementById("op-one").value);
+        let y = parseInt(document.getElementById("op-two").value);
+
         // perform the operation
+
         switch (operation) {
-            case document.getElementById("addition"):
+            case "addition":
                 alert(x+y);
                 break;
-            case document.getElementById("subtraction"):
+            case "subtraction":
                 alert(x-y);
                 break;
-            case document.getElementById("multiplication"):
+            case "multiplication":
                 alert(x*y);
                 break;
-            case document.getElementById("division"):
+            case "division":
                 alert(x/y);
                 break;
-        }
+        }//operation is over
     };
+
     Array.from(document.querySelectorAll("button.operator")).forEach(function($btn) {
         $btn.addEventListener("click", function() {
             performOperation($btn.id);
