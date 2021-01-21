@@ -13,13 +13,12 @@
 
     // your code here
     document.getElementById("run").addEventListener("click",function(){
-        for (let i = 0; i <= 12; i++) {
+        for (let i = 0; i <= 11; i++) {
 
            let date = new Date(parseInt(document.getElementById('year').value) ,i, 13);
             if (date.getDay()==5) {
                 console.log(i);
-                let month = i;
-                switch (month){
+                switch (i){
                     case 0:
                         alert('January');
                         break
@@ -59,6 +58,5 @@
                 }
             }
         }
-
     });
 })();
