@@ -30,8 +30,8 @@
         document.getElementById("n-9").innerHTML = numbers[8]
         document.getElementById("n-10").innerHTML = numbers[9]
 
-        let smallest = Math.min(numbers);
-        let biggest = Math.max(numbers);
+        let smallest = Math.min(...numbers);
+        let biggest = Math.max(...numbers);
         let sum = numbers.reduce((x,y) => x + y, 0);
         let average = numbers.reduce((x,y) => x + y, 0) / numbers.length;
 
