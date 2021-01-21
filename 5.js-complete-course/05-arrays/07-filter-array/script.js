@@ -90,5 +90,16 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click",function(){
+
+        let ageVerification = person =>{
+            if (person.age >18)
+                return person
+        }
+
+        let grownups = people.filter(ageVerification);
+        console.log(grownups);
+
+    });
 
 })();
