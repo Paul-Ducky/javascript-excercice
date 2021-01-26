@@ -21,40 +21,40 @@
                 switch (i){
                     case 0:
                         alert('January');
-                        break
+                        break;
                     case 1:
                         alert('February');
-                        break
+                        break;
                     case 2:
                         alert('March');
-                        break
+                        break;
                     case 3:
                         alert('April');
-                        break
+                        break;
                     case 4:
                         alert('May');
-                        break
+                        break;
                     case 5:
                         alert('June');
-                        break
+                        break;
                     case 6:
                         alert('July');
-                        break
+                        break;
                     case 7:
                         alert('August');
-                        break
+                        break;
                     case 8:
                         alert('September');
-                        break
+                        break;
                     case 9:
                         alert('October');
-                        break
+                        break;
                     case 10:
                         alert('November');
-                        break
+                        break;
                     case 11:
                         alert('December');
-                        break
+                        break;
                 }
             }
         }

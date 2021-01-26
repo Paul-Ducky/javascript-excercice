@@ -30,9 +30,9 @@
     document.getElementById("run").addEventListener("click",function(){
 
         if (fruits.includes("apple")){
-            console.log("yes")
+            console.log("yes");
         } else {
-            console.log("no")
+            console.log("no");
         }
 
     });

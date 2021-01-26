@@ -24,5 +24,5 @@ const calculateAvailable = theatre => {
 };
 
 console.log(`Theatres:`, theatres.length);
-console.log(`Total capacity:`, theatres.reduce((total, theatre) => total + theatre.capacity, 0));
+console.log(`Total capacity:`, theatres.reduce((total, theatre) => total + theatre.capacity));
 console.table(theatres.map(theatre => calculateAvailable(theatre)));

@@ -91,8 +91,8 @@
 
     // your code here
     document.getElementById("run").addEventListener("click",function (){
-        //let sum = numbers.reduce((x,y) => x + y, 0);
-
+        //let sum = array.reduce((sum,object) => sum + object.property, starting value);
+        // let sum = float
         let totalage = people.reduce((total, person) => total + person.age, 0);
         console.log(totalage)
     });

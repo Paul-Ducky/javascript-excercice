@@ -12,7 +12,7 @@ const movies = [
 ];
 
 const wrapWithTag = (content, tagname) => {
-  return `<${tagname}>${content}</${tagname}>`;
+  return `<${tagname}>${content}</${tagname}>`; // Template literals'
 };
 
 const parseTitle = title => {

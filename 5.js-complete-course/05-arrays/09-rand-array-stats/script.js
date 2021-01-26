@@ -15,31 +15,30 @@
     document.getElementById("run").addEventListener("click",function(){
 
         let numbers = [];
-        for (i=0;i<10;i++){
+        for (let i=0;i<10;i++){
            let number = Math.floor(Math.random()*100);
             numbers.push(number);
         }
-        document.getElementById("n-1").innerHTML = numbers[0]
-        document.getElementById("n-2").innerHTML = numbers[1]
-        document.getElementById("n-3").innerHTML = numbers[2]
-        document.getElementById("n-4").innerHTML = numbers[3]
-        document.getElementById("n-5").innerHTML = numbers[4]
-        document.getElementById("n-6").innerHTML = numbers[5]
-        document.getElementById("n-7").innerHTML = numbers[6]
-        document.getElementById("n-8").innerHTML = numbers[7]
-        document.getElementById("n-9").innerHTML = numbers[8]
-        document.getElementById("n-10").innerHTML = numbers[9]
+        document.getElementById("n-1").innerText = numbers[0]
+        document.getElementById("n-2").innerText = numbers[1]
+        document.getElementById("n-3").innerText = numbers[2]
+        document.getElementById("n-4").innerText = numbers[3]
+        document.getElementById("n-5").innerText = numbers[4]
+        document.getElementById("n-6").innerText = numbers[5]
+        document.getElementById("n-7").innerText = numbers[6]
+        document.getElementById("n-8").innerText = numbers[7]
+        document.getElementById("n-9").innerText = numbers[8]
+        document.getElementById("n-10").innerText = numbers[9]
 
-        let smallest = Math.min(...numbers);
-        let biggest = Math.max(...numbers);
+        let smallest = String(Math.min(...numbers));
+        let biggest = String(Math.max(...numbers));
         let sum = numbers.reduce((x,y) => x + y, 0);
-        let average = numbers.reduce((x,y) => x + y, 0) / numbers.length;
+        let average = String(numbers.reduce((x,y) => x + y, 0) / numbers.length);
 
-        document.getElementById("min").innerHTML = smallest;
-        document.getElementById("max").innerHTML = biggest;
-        document.getElementById("sum").innerHTML = sum;
-        document.getElementById("average").innerHTML = average;
+        document.getElementById("min").innerText = smallest;
+        document.getElementById("max").innerText = biggest;
+        document.getElementById("sum").innerText = sum;
+        document.getElementById("average").innerText = average;
     });
-
 
 })();

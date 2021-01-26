@@ -17,7 +17,7 @@ const tvshows = [
 ];
 
 document.write(`<ol>`);
-for (let i = 0; i < movies.length; i++) {
-  document.write(`<li>${movies[i]}</li>`);
+for (let i = 0; i < tvshows.length; i++) {
+  document.write(`<li>${tvshows.reverse()[i]}</li>`);
 }
 document.write(`</ol>`);
