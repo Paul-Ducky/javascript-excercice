@@ -15,7 +15,7 @@
     let pass = document.getElementById('pass-one');
     let counter = document.getElementById("counter");
 
-    pass.addEventListener('keyup', function(){
+    pass.addEventListener('input', function(){
         if (pass.value.length > 10) {
             pass.value = pass.value.slice(0, 10);
         }

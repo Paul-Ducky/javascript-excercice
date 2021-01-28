@@ -23,8 +23,7 @@
     let stopTwo = document.getElementById("fix-part-two");
     let stopThree = document.getElementById("fix-part-three");
     let stopFour = document.getElementById("fix-part-four");
-
-
+    // setting up the spinners -> no animations! // at the end each has it's own stop function
     let spinner1 = setInterval(spinToWin1,15)
     let spinner2 = setInterval(spinToWin2,15)
     let spinner3 = setInterval(spinToWin3,15)
