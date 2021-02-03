@@ -12,14 +12,18 @@
 (function() {
 
     // your code here
+    //get the variables to work with
     let targetText = document.getElementById("target").innerText;
     let target = document.getElementById("target");
+    //empty the target to not double up with text
     document.getElementById("target").innerText = "";
-    let words = targetText.split('');
+    //split the string into an array
+    let characters = targetText.split('');
     let i = 0;
-        words.forEach(function (word) {
+    // loop through each word / character
+        characters.forEach(function (character) {
             let wrap = document.createElement("span");
-            wrap.innerText = word;
+            wrap.innerText = character;
             i++
             switch (i){
                 case 1:

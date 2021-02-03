@@ -11,4 +11,17 @@
 
 (() => {
     // your code here
+    console.log('start');
+
+    document.getElementById("run").addEventListener("click", ()=>{
+       window.lib.getPosts()
+           .then(function(result){
+               // Do something with the result
+               console.table(result)
+               })
+
+
+
+    });
+
 })();

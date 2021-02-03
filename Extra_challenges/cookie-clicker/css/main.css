@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    color: whitesmoke;
+    border-style: dashed;
+    border-color: blue;
+    font-family: 'Nothing You Could Do', cursive;
+    background-color: black;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+        "store soul-container unit-container"
+        "store center-piece unit-container"
+        "store center-piece unit-container"
+        "bottom-river bottom-river bottom-river";
+
+}
+.soul-container{
+    grid-area: soul-container;
+    justify-self: center;
+    align-self: center;
+    font-size: 2rem;
+}
+.center-piece{
+    grid-area: center-piece;
+    font-size: 2rem;
+}
+.store{
+    grid-area: store;
+    font-size: 2rem;
+}
+.unit-container{
+    grid-area: unit-container;
+    font-size: 2rem;
+}
+.bottom-river{
+    grid-area: bottom-river;
+    background-image: url("../img/water.png");
+    background-size: cover;
+}
+#charon{
+    height: 50px;
+    width: 50px;
+    background-image: url("../img/charon_ferryman.png");
+    background-size: cover;
+    background-color: transparent;
+}
+
+#current-souls{
+    color: #63C3D1;
+    font-size: 4rem;
+    justify-self: center;
+    align-self: center;
+}
+
+#click-here-container{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+
+}
+#click-here{
+     border-radius: 75%;
+     background-image: url("../img/main_soul.png");
+     background-size: cover;
+     border-color: #63C3D1;
+     min-height: 250px;
+     min-width: 250px;
+     cursor: pointer;
+    transition: 0.4s;
+ }
+#click-here:hover{
+    min-width: 275px;
+    min-height: 275px;
+    transition: 0.4s;
+}

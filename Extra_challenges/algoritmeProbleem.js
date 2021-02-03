@@ -23,7 +23,8 @@ function checkForBiggestPalindrome(string) {
     let length = 0;
     let biggestPalin = "";
     // SUBSTR IS EEN FUNCTIE WAUWWWWW
-    for (let i=0;i< string.length;i++){
+    let i =0
+    for (i;i< string.length;i++){
         let subString = string.substr(i,string.length);
 
         for (let j=subString.length; j>=0; j--){
@@ -33,11 +34,11 @@ function checkForBiggestPalindrome(string) {
 
                 if (checkForPalindrome(subVanSubString)){
 
-                    // de grootste bijhouden
+                    //weg met nummers! en ondertussen ook wel grootste bijhouden
                     if(subVanSubString.length > length){
                         length = subVanSubString.length;
                         biggestPalin = subVanSubString.replace(/[0-9]/g, '');
-                        //weg met nummers! en ondertussen ook wel grootste bijhouden
+
                     }
                 }
             }

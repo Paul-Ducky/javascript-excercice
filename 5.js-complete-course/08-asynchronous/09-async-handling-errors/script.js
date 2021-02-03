@@ -11,4 +11,19 @@
 
 (() => {
     // your code here
+    console.log('start');
+    document.getElementById("run").addEventListener("click",()=>{
+        async function findPeople(){
+           try{
+               let people = await window.lib.getPersons()
+               console.table(people)
+               return people
+           } catch (error){
+               console.log("the worst case scenario")
+               console.error(error)
+           }
+        }
+        findPeople()
+    });
+
 })();
